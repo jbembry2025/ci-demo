@@ -36,7 +36,7 @@ pipeline {
                     docker rm -f ci-demo-container || true
 
                     echo "Running new container..."
-                    docker run -d -p 8080:8080 --name ci-demo-container ci-demo
+                    docker run -d -p 8080:8090 --name ci-demo-container ci-demo
                 '''
             }
         }
